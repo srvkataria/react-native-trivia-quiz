@@ -1,8 +1,8 @@
 # react-native-trivia-quiz
 
-Trivia Quiz Mobile app game built in React Native
+Realtime Multiplayer Trivia Quiz Mobile app game built in React Native
 
-Mutliple Modes: 
+Modes: 
 
 - Single Player (with Final Score / Ranking Page)
 - Play with Friends Realtime (upto 20 Players or even more)
