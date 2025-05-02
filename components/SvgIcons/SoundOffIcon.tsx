@@ -1,0 +1,31 @@
+import * as React from 'react';
+import Svg, { Path } from 'react-native-svg';
+
+export default function SoundOffIcon(props) {
+  return (
+    <Svg
+      width={props.width || 30}
+      height={props.height || 30}
+      viewBox="0 0 30 30"
+      fill="none"
+      {...props}
+    >
+      {/* Speaker shape */}
+      <Path
+        d="M7.5 18.7498H5C4.66848 18.7498 4.35054 18.6181 4.11612 18.3837C3.8817 18.1492 3.75 17.8313 3.75 17.4998V12.4998C3.75 12.1683 3.8817 11.8503 4.11612 11.6159C4.35054 11.3815 4.66848 11.2498 5 11.2498H7.5L11.875 5.62478C11.9843 5.41257 12.1658 5.24644 12.3869 5.1564C12.6079 5.06636 12.8539 5.05836 13.0803 5.13384C13.3068 5.20932 13.4987 5.3633 13.6215 5.56796C13.7444 5.77262 13.7899 6.01446 13.75 6.24978V23.7498C13.7899 23.9851 13.7444 24.2269 13.6215 24.4316C13.4987 24.6363 13.3068 24.7903 13.0803 24.8657C12.8539 24.9412 12.6079 24.9332 12.3869 24.8432C12.1658 24.7531 11.9843 24.587 11.875 24.3748L7.5 18.7498Z"
+        stroke="white"
+        strokeWidth={3}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      {/* Crossed out X icon */}
+      <Path
+        d="M20 12.5L25 17.5M25 12.5L20 17.5"
+        stroke="white"
+        strokeWidth={3}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </Svg>
+  );
+}
