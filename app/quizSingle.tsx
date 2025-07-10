@@ -7,6 +7,7 @@ import { getRandomQuestions } from '../utils/QuizUtils';
 import { SoundContext } from '../utils/SoundContext';
 import BackgroundTimer from 'react-native-background-timer';
 import { router } from 'expo-router';
+import { questionTimerInSeconds } from '../quizConfig';
 
 const appBackground = require('@/assets/images/appBackground.png');
 const defaultOption = require('@/assets/images/common/defaultOption.png');
@@ -15,7 +16,7 @@ const wrongOption = require('@/assets/images/common/wrongOption.png');
 
 export default function QuizSingle() {
   const navigation = useNavigation();
-  const { playWinSound, playLoseSound, stopQuizSound } = useContext(SoundContext);
+  const { playWinSound, playLoseSound } = useContext(SoundContext);
   const [questions, setQuestions] = useState<any[]>([]);
   const [currentQIndex, setCurrentQIndex] = useState(0);
   const [userAnswered, setUserAnswered] = useState(false);
@@ -69,7 +70,7 @@ export default function QuizSingle() {
       stopTimerExternally.current?.();
 
       const question = questionsRef.current[currentQIndexRef.current];
-      const correctIndex = question.options.indexOf(question.answer);
+      const correctIndex = question.answer - 1;
 
       const answerObj = {
         qText: question.qText,
@@ -93,9 +94,8 @@ export default function QuizSingle() {
     stopTimerExternally.current();
 
     const question = questions[currentQIndex];
-    const correctIndex = question.options.indexOf(question.answer);
+    const correctIndex = question.answer - 1;
     const isCorrect = index === correctIndex;
-
     setUserSelectionIndex(index);
 
     if (isCorrect) {
@@ -124,7 +124,7 @@ export default function QuizSingle() {
     if (questions.length === 0) return null;
 
     const question = questions[currentQIndex];
-    const correctIndex = question.options.indexOf(question.answer);
+    const correctIndex = question.answer - 1;
     const windowWidth = Dimensions.get('window').width;
     const windowWidth90 = (windowWidth * 90) / 100;
 
@@ -169,7 +169,7 @@ export default function QuizSingle() {
           <QuizHeader
             currentQIndex={currentQIndex}
             totalQuestions={questions.length}
-            maxTime={10}
+            maxTime={questionTimerInSeconds}
             userAnswered={userAnswered}
             onTimerEnd={handleTimerEnd}
             stopExternalTimerCallback={(stopFunc: () => void) => stopTimerExternally.current = stopFunc}

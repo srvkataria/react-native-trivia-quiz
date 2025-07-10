@@ -3,12 +3,12 @@
     "id": 1,
     "qText": "What has keys but can't open locks?",
     "options": ["Piano", "Map", "Keyboard", "Lock"],
-    "answer": "Keyboard"
+    "answer": 3
   },
   {
     "id": 2,
     "qText": "I’m tall when I’m young, and short when I’m old. What am I?",
     "options": ["Pencil", "Tree", "Candle", "Shadow"],
-    "answer": "Candle"
+    "answer": 3
   }
 ]
