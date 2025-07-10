@@ -9,6 +9,9 @@ Modes:
 - 1x1 Random opponent 
 - Public Room (Group Play with Random Opponents)
 
+<img src="app-screenshots/App01.jpg" alt="Logo" width="200"/> <img src="app-screenshots/App02.jpg" alt="Logo" width="200"/> <img src="app-screenshots/App03.jpg" alt="Logo" width="200"/> <img src="app-screenshots/App04.jpg" alt="Logo" width="200"/>
+
+
 **Note**: This open-source version includes only the **Single Player** mode with multiple Quiz questions, Scoreboards, Sounds etc.
 
 ### This project is built using Expo. 
