@@ -7,8 +7,56 @@
   },
   {
     "id": 2,
-    "qText": "I’m tall when I’m young, and short when I’m old. What am I?",
-    "options": ["Pencil", "Tree", "Candle", "Shadow"],
+    "qText": "What gets wetter as it dries?",
+    "options": ["Towel", "Raincoat", "Sun", "Soap"],
+    "answer": 1
+  },
+  {
+    "id": 3,
+    "qText": "What has to be broken before you can use it?",
+    "options": ["Glass", "Silence", "Egg", "Seal"],
     "answer": 3
+  },
+  {
+    "id": 4,
+    "qText": "What gas do plants absorb from the atmosphere?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "answer": 3
+  },
+  {
+    "id": 5,
+    "qText": "What part of the cell contains DNA?",
+    "options": ["Ribosome", "Nucleus", "Cytoplasm", "Mitochondria"],
+    "answer": 2
+  },
+  {
+    "id": 6,
+    "qText": "What is the longest river in the world?",
+    "options": ["Amazon", "Yangtze", "Nile", "Mississippi"],
+    "answer": 3
+  },
+  {
+    "id": 7,
+    "qText": "Who was the first President of the United States?",
+    "options": ["Thomas Jefferson", "George Washington", "John Adams", "Abraham Lincoln"],
+    "answer": 2
+  },
+  {
+    "id": 8,
+    "qText": "What does 'HTTP' stand for?",
+    "options": ["HyperText Transfer Protocol", "High-Tech Transport Protocol", "HyperText Transmission Program", "Host Tracking Transfer Path"],
+    "answer": 1
+  },
+  {
+    "id": 9,
+    "qText": "Which TV show features the character Eleven with telekinetic powers?",
+    "options": ["The Witcher", "Stranger Things", "The Mandalorian", "Dark"],
+    "answer": 2
+  },
+  {
+    "id": 10,
+    "qText": "Who played Jack in the movie 'Titanic'?",
+    "options": ["Brad Pitt", "Leonardo DiCaprio", "Tom Cruise", "Matt Damon"],
+    "answer": 2
   }
 ]
