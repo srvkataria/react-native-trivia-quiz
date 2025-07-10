@@ -11,6 +11,9 @@ Modes:
 
 <img src="app-screenshots/App01.jpg" alt="Logo" width="200"/> <img src="app-screenshots/App02.jpg" alt="Logo" width="200"/> <img src="app-screenshots/App03.jpg" alt="Logo" width="200"/> <img src="app-screenshots/App04.jpg" alt="Logo" width="200"/>
 
+### Demo
+<img src="app-screenshots/ScreenRecording.gif" alt="Demo" width="300" height="auto"/>
+
 
 **Note**: This open-source version includes only the **Single Player** mode with multiple Quiz questions, Scoreboards, Sounds etc.
 
